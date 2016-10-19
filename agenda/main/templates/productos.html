@@ -1,0 +1,26 @@
+<html>
+<head>
+	<title>BlisS - products</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Estos son los productos</h1>
+
+	{% for producto in productos %}
+
+		<ul>
+			<li>{{producto.nombre}}</li>
+			<li>{{producto.desc}}</li>
+			<li>{{producto.precio}}</li>
+		</ul>
+	{%endfor%}
+
+
+
+
+
+	<a href="{% url 'home' %}">
+		Volver
+	</a>
+</body>
+</html>
