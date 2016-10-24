@@ -7,7 +7,7 @@ from marvel import urls as marvelURLS
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^marvel/',
-    	include(marvelURLS)),
+    	include(marvelURLS,namespace="marv")),
     url(r'^',
-    	include(mainURLS)),
+    	include(mainURLS,namespace="main")),
 ]
