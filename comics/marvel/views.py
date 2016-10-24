@@ -12,9 +12,11 @@ class Home(View):
 		heroe = request.POST.get('heroe')
 		mv = Marvel()
 		personaje = mv.get_personaje(heroe)
+		link = mv.get_imagen()
 		template_name = 'marvel/home.html'
 		context = {
 		'personaje':personaje,
-		'heroe':heroe
+		'heroe':heroe,
+		'link':link
 		}
 		return render(request,template_name,context)

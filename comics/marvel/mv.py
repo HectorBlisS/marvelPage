@@ -34,6 +34,7 @@ class Marvel(object):
 			print('Escribe bien cabrón')
 
 	def get_imagen(self):
-		webbrowser.open(self.personaje['data']['results'][0]['thumbnail']['path']+'.'+self.personaje['data']['results'][0]['thumbnail']['extension'])
+		# webbrowser.open(self.personaje['data']['results'][0]['thumbnail']['path']+'.'+self.personaje['data']['results'][0]['thumbnail']['extension'])
+		return self.personaje['data']['results'][0]['thumbnail']['path']+'.'+self.personaje['data']['results'][0]['thumbnail']['extension']
 
 
