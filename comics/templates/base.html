@@ -4,6 +4,25 @@
 	<meta chasrset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<style type="text/css">
+		@keyframes palpitar{
+			0%{
+				transform:scale(1);
+				transform:rotate(0deg);
+			}
+			30%{
+				transform:scale(0.5);
+				transform:rotate(45deg);
+			}
+			60%{
+				transform:scale(0.5);
+				transform:rotate(170deg);
+			}
+			100%{
+				transform:scale(0.5);
+				transform:rotate(0deg);
+			}
+		}
+
 		html, body{
 			margin:0;
 			padding: 0;
@@ -26,6 +45,9 @@
 		section{
 			width: 80%;
 			margin: 0 auto;
+		}
+		img{
+			animation:palpitar 1s ease-in-out infinite;
 		}
 	</style>
 </head>
